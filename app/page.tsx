@@ -12,10 +12,16 @@ export default function Home() {
         <div className="font-chathura md:text-6xl font-bold text-center text-[#FED501] text-4xl">
           JOIN THE WAITLIST NOW
         </div>
-        <div className='w-full flex justify-center'>
-          <input type="text" placeholder="your email" className=" sm:w-full  h-[4.4rem] rounded-lg border-2 border-black text-black px-6 font-chathura text-[2.48rem]" />
+        <div className='w-full relative flex justify-center'>
+          <input type="text" placeholder="your email" className="z-[1] sm:w-full  h-[4.4rem] rounded-lg border-2 border-black text-black px-6 font-chathura text-[2.48rem]" />
+          <div className='w-7 h-7 absolute bottom-[-0.6rem] border-b-2 left-2/3 z-10 bg-white  border-black rounded-full'></div>
+        <div className='w-4 h-4 absolute -bottom-8   border-2 left-[66.167%] z-10 bg-white  border-black rounded-full'></div>
+        <div className='w-2 h-2 absolute -bottom-11   border-2 left-[66%] z-10 bg-white  border-black rounded-full'></div>
+
         </div>
-        <button className='key-button mt-6 text-black  mx-auto flex justify-center items-center font-extrabold font-chathura text-[2.48rem] bg-[#FED501] h-10  sm:h-14'>JOIN WAITLIST</button>
+        
+
+        <button className='key-button mt-9 -translate-x-3 text-black mx-auto flex justify-center items-center font-extrabold font-chathura text-[2.48rem] bg-[#FED501] h-10  sm:h-14'>JOIN WAITLIST</button>
       </div>
       <div className="  w-full flex justify-center items-center">
         <img src={ComingSoon.src} alt="Coming Soon" className="sm:w-[20.4rem] w-[15.2rem] h-[2.7rem] sm:h-[3.4rem]" />
