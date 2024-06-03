@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import { Inter } from "next/font/google";
+import Head from "next/head";
 import "./globals.css";
 
 const inter = Inter({ subsets: ["latin"] });
@@ -16,9 +17,15 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <head>
-        <link href="https://db.onlinewebfonts.com/c/19f4723099f0a5f5d9e6a316534d90f5?family=CCZoinks+Regular" rel='stylesheet' />
-      </head>
+      <Head>
+        <link
+          rel="preload"
+          href="/fonts/CCZoinks-Regular.ttf"
+          as="font"
+          type="font/ttf"
+          crossOrigin="anonymous"
+        />
+      </Head>
       <body className={inter.className}>{children}</body>
     </html>
   );
