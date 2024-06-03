@@ -16,6 +16,9 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
+      <head>
+        <link href="https://db.onlinewebfonts.com/c/19f4723099f0a5f5d9e6a316534d90f5?family=CCZoinks+Regular" rel='stylesheet' />
+      </head>
       <body className={inter.className}>{children}</body>
     </html>
   );
